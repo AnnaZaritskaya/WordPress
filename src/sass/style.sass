@@ -5,6 +5,19 @@
 =container
     max-width: 1140px
     margin: 0 auto
+=btn
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%)
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4)
+    width: 313px
+    height: 72px
+    font-family: 'RobotoCondensed'
+    font-size: 21px
+    line-height: 24px
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22)
+    cursor: pointer
+    outline: none
 
 
 
@@ -33,6 +46,7 @@
         .header__text
             font-family: 'Roboto'
             margin-top: 87px
+            margin-bottom: 71px
             h1
                 +yellow
                 font-weight: 900
@@ -82,7 +96,33 @@
                     text-transform: uppercase
                     font-weight: bold
 
-
+        .header__btn
+            display: block
+            margin: 0 auto
+            +btn
+            margin-bottom: 95px
+        .header__more
+            margin-bottom: 61px
+            .more__text
+                display: block
+                text-align: center
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 100
+                font-size: 15px
+                line-height: 24px
+                text-transform: uppercase
+                color: #FFFFFF
+                &::after
+                    content: ""
+                    display: block
+                    margin: 0 auto
+                    background: url(../src/img/down.png) center center/cover no-repeat
+                    width: 30px
+                    height: 19px
+                    margin-top: 13px
+            
+            
 
             
             
