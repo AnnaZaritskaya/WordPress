@@ -11,6 +11,7 @@
     width: 313px
     height: 72px
     font-family: 'Roboto Condensed'
+    font-weight: 400
     font-size: 21px
     line-height: 24px
     text-transform: uppercase
@@ -25,7 +26,7 @@
     background: url(../src/img/main_bg.jpg) center center/cover no-repeat
     min-height: 800px
 
-    .main__header
+    &__header
         padding: 38px 0 59px 0
         +container
         .header__logo
@@ -106,7 +107,7 @@
             .more__text
                 display: block
                 text-align: center
-                font-family: 'Roboto'
+                font-family: "Roboto"
                 font-style: normal
                 font-weight: 100
                 font-size: 15px
@@ -128,7 +129,6 @@
     padding-bottom: 75px
     .waiting__text
         +container
-        margin-bottom: 75px
         h2
             font-family: 'Roboto'
             font-style: normal
@@ -160,11 +160,21 @@
             display: flex
             justify-content: space-between
             .waiting__block 
+                margin-right: 48px
+                &:nth-last-child(1)
+                    margin-right: 0
                 .block__img
                     max-width: 342px
-                    height: 201px 
-                    margin-right: 48px
-                .block__text 
+                    height: 201px
+                    margin-bottom: 26px 
+                .block__text
+                    font-family: 'Roboto'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 15px
+                    line-height: 21px
+                    text-align: center
+                    color: #4A4A4A
 
          
             
