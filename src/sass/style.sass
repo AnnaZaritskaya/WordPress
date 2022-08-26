@@ -25,16 +25,23 @@
 .main
     background: url(../src/img/main_bg.jpg) center center/cover no-repeat
     min-height: 800px
-
+    padding-top: 118px
     &__header
-        padding: 38px 0 59px 0
+        padding: 0px 0 59px 0
         +container
         .header__logo
-            background: url(../src/img/logo.png) center no-repeat
+            text-decoration: none
             height: 71px
-            p
-                display: flex
-                justify-content: center
+            display: flex
+            justify-content: center
+            .logo__img
+                position: absolute
+                background: url(../src/img/logo.png) center no-repeat
+                width: 83px
+                height: 71px
+                top: 36px
+            .logo__text
+                position: relative
                 text-align: justify
                 font-family: 'Roboto'
                 font-style: normal
@@ -43,7 +50,6 @@
                 line-height: 24px
                 text-transform: uppercase
                 color: #fff
-                padding-top: 80px
         .header__text
             font-family: 'Roboto'
             margin-top: 87px
@@ -159,7 +165,8 @@
         .waiting__blocks
             display: flex
             justify-content: space-between
-            .waiting__block 
+            .waiting__block
+                max-width: 345px 
                 margin-right: 48px
                 &:nth-last-child(1)
                     margin-right: 0
@@ -175,9 +182,32 @@
                     line-height: 21px
                     text-align: center
                     color: #4A4A4A
+.optimization
+    background: url(../src/img/woman_bg.jpg) left no-repeat
+    margin-top: 48px
+    margin-left: 150px
+    .optimization__text
+        max-width: 760px
+        +container
+        padding: 108px 0 74px 0
 
+        h2
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 900
+            font-size: 30px
+            line-height: 30px
+            text-transform: uppercase
+            color: #299CBD
+            margin-bottom: 35px
+        p
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 300
+            font-size: 17px
+            line-height: 27px
+            color: #4A4A4A
          
-            
 
             
             
