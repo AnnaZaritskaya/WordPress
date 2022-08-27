@@ -19,6 +19,14 @@
     text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22)
     cursor: pointer
     outline: none
+=line
+    content: ""
+    display: block
+    margin: 0 auto
+    height: 4px
+    width: 16%
+    background-color:#F9BF3B
+    margin-top: 18px
 =bold
     font-weight: 700
 
@@ -147,13 +155,7 @@
             color: #252525
             margin-bottom: 19px
             &::after
-                content: ""
-                display: block
-                margin: 0 auto
-                height: 4px
-                width: 16%
-                background-color:#F9BF3B
-                margin-top: 18px
+                +line
         p
             font-family: 'Roboto'
             font-style: normal
@@ -214,8 +216,73 @@
 .finish
     background: url(../src/img/second_bg.jpg) center center/cover no-repeat
     min-height: 450px
+    .finish__block
+        +container
+        padding-top: 86px
+        padding-bottom: 67px
+        h2
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            font-size: 30px
+            line-height: 30px
+            text-align: center
+            text-transform: uppercase
+            color: #EFEFEF
+            margin-bottom: 39px
+            &::after
+                +line
+        .finish__wrapper
+            display: flex
+            justify-content: space-between
+            .finish__item
+                max-width: 204px
+                .finish__round
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin: 0 auto
+                    width: 118px
+                    height: 118px
+                    border-radius: 100%
+                    background: #B4E2FF
+                    margin-bottom: 25px
+                .finish__descr
+                    text-align: center
+                    font-family: 'Roboto'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 17px
+                    line-height: 20px
+                    color: #EFEFEF         
 
-            
+.present
+    background-color: #EFEFEF
+    .present__wrapp
+        +container
+        padding: 85px 0 88px 0
+        .present__text
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            font-size: 30px
+            line-height: 43px
+            text-align: center
+            color: #252525
+            margin-bottom: 51px
+            &::before
+                display: block
+                content: ""
+                margin: 0 auto
+                background: url(../src/img/Rectangle.png) center no-repeat
+                width: 154px
+                height: 174px
+                margin-bottom: 45px
+        .present__btn
+            display: block
+            margin: 0 auto
+            +btn
+
             
             
 
