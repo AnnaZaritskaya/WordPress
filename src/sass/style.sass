@@ -19,6 +19,8 @@
     text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22)
     cursor: pointer
     outline: none
+=bold
+    font-weight: 700
 
 
 
@@ -110,24 +112,23 @@
             margin-bottom: 95px
         .header__more
             margin-bottom: 59px
-            .more__text
+            display: block
+            text-align: center
+            font-family: "Roboto"
+            font-style: normal
+            font-weight: 100
+            font-size: 15px
+            line-height: 24px
+            text-transform: uppercase
+            color: #FFFFFF
+            &::after
+                content: ""
                 display: block
-                text-align: center
-                font-family: "Roboto"
-                font-style: normal
-                font-weight: 100
-                font-size: 15px
-                line-height: 24px
-                text-transform: uppercase
-                color: #FFFFFF
-                &::after
-                    content: ""
-                    display: block
-                    margin: 0 auto
-                    background: url(../src/img/down.png) center center/cover no-repeat
-                    width: 30px
-                    height: 19px
-                    margin-top: 13px
+                margin: 0 auto
+                background: url(../src/img/down.png) center center/cover no-repeat
+                width: 30px
+                height: 19px
+                margin-top: 13px
 
 .waiting
     background-color: #EFEFEF
@@ -183,31 +184,36 @@
                     text-align: center
                     color: #4A4A4A
 .optimization
-    background: url(../src/img/woman_bg.jpg) left no-repeat
+    background: url(../src/img/woman_bg.jpg) left bottom no-repeat
     margin-top: 48px
     margin-left: 150px
-    .optimization__text
-        max-width: 760px
+    .optimization__wrapper
         +container
         padding: 108px 0 74px 0
-
-        h2
-            font-family: 'Roboto'
-            font-style: normal
-            font-weight: 900
-            font-size: 30px
-            line-height: 30px
-            text-transform: uppercase
-            color: #299CBD
-            margin-bottom: 35px
-        p
-            font-family: 'Roboto'
-            font-style: normal
-            font-weight: 300
-            font-size: 17px
-            line-height: 27px
-            color: #4A4A4A
-         
+        .optimization__text
+            max-width: 760px
+            margin: 0 0 0 auto
+            h2
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 900
+                font-size: 30px
+                line-height: 30px
+                text-transform: uppercase
+                color: #299CBD
+                margin-bottom: 35px
+            p
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 300
+                font-size: 17px
+                line-height: 27px
+                color: #4A4A4A
+                span
+                    +bold
+.finish
+    background: url(../src/img/second_bg.jpg) center center/cover no-repeat
+    min-height: 450px
 
             
             
