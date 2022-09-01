@@ -323,7 +323,28 @@
             margin-bottom: 10px
 footer
     background-color: #1A1A1A
-    margin: 57px 0 67px 0
+    padding: 57px 0 67px 0
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 300
+    font-size: 15px
+    line-height: 21px
+    text-align: center
+    color: #888888
+    .footer__menu
+        display: flex
+        justify-content: center
+        text-decoration-line: underline
+        li
+            list-style: none
+            &::after
+                content: "\007C"
+                padding: 0 5px 0 5px
+            &:nth-last-child(1)
+                list-style: none
+                
+    .footer__text
+        text-decoration: none
     
             
 
