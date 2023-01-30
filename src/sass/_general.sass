@@ -1,0 +1,96 @@
+*
+  font-family: 'Roboto'
+
+header
+  background: url(../../src/img/main_bg.jpg) center center/cover no-repeat
+  padding-bottom: 85px
+  .header
+    &__logo
+      text-decoration: none
+      display: flex
+      justify-content: center
+      padding: 38px 0 50px 0
+      a
+        text-decoration: none
+      &_text
+        font-weight: 500
+        color: $color_white
+        padding-top: 10px
+      &_img
+        background: url(../../src/img/logo.png) center center/cover no-repeat
+        width: 83px
+        height: 71px
+        margin: 0 auto
+    &__text
+      display: flex
+      flex-direction: column
+      align-items: center
+      &_header
+        font-weight: 900
+        font-size: 41px
+        text-transform: uppercase
+        color: $color_yellow
+      &_easily
+        display: flex
+        flex-direction: row
+        font-weight: 900
+        font-size: 80px
+        text-transform: uppercase
+        color: $color_white
+        white-space: nowrap
+        &::before
+          left: -0.5em
+          margin: 49px 0 0 -50%
+        &::after
+          left: 0.5em
+          margin: 49px -50% 0 0
+        &:before,
+        &::after
+          content: ''
+          display: inline-block
+          // vertical-align: middle
+          position: relative
+          width: 100%
+          border-top: 2px solid $color_white
+          background-clip: content-box
+      &_info
+        font-weight: 300
+        font-size: 21px
+        line-height: 28px
+        color: $color_white
+        padding-top: 23px
+        span
+          color: $color_yellow
+    &__btn
+      display: flex
+      justify-content: center
+      padding: 72px 0
+      button
+        +btn
+    &__more
+      display: flex
+      justify-content: center
+      flex-direction: row
+    &__more >a
+      position: relative
+      font-weight: 100
+      font-size: 15px
+      text-decoration: none
+      color: $color_white
+      opacity: 0.6
+  .arrow
+    display: block
+    position: absolute
+    right: 10px
+    top: 25px
+    width: 10px
+    height: 2px
+    span
+      display: block
+      height: 2px
+      width: 100%
+      background-color: #fff
+      margin-bottom: 2px
+      transition: 0.5s all
+      transform: translateY(3px) rotate(-35deg)
+
