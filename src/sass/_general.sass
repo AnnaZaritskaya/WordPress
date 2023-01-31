@@ -81,16 +81,43 @@ header
   .arrow
     display: block
     position: absolute
-    right: 10px
+    right: 35%
     top: 25px
+    transform: translateX(-35%)
     width: 10px
     height: 2px
-    span
+    &__item
+      span
       display: block
       height: 2px
       width: 100%
       background-color: #fff
       margin-bottom: 2px
+      border-radius: 4px
+      opacity: 10
       transition: 0.5s all
-      transform: translateY(3px) rotate(-35deg)
+      transform: translateY(2px) rotate(-33deg)
+      &:first-child
+        transform: translate3d(-8px, 6px, 10px) rotate(33deg)
+    &__bottom
+      top: 33px
 
+.waiting
+  background-color: #EFEFEF
+  padding: 85px 0 85px 0
+  &__text
+    display: flex
+    flex-direction: column
+    align-items: center
+    &_header
+      font-weight: 400
+      font-size: 30px
+      color: $color_black
+      padding-bottom: 43px
+      &::after
+        +line
+    &_info
+      font-weight: 400
+      font-size: 23px
+      color: #4A4A4A
+      padding-bottom: 45px
